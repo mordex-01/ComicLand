@@ -7,11 +7,11 @@ class Auth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(30, 30, 30, 1),
+      backgroundColor: const Color.fromRGBO(30, 30, 30, 1),
       body: Column(
         children: [
-          const SizedBox(
-            height: 60,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height / 18,
           ),
           const Row(
             children: [
@@ -52,10 +52,13 @@ class Auth extends StatelessWidget {
           SizedBox(
             height: MediaQuery.sizeOf(context).height / 6,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Button(
+                onTap: () {
+                  Navigator.pushNamed(context, "/login");
+                },
                 text: "Login",
                 iconData: Icons.lock,
               )
@@ -64,10 +67,13 @@ class Auth extends StatelessWidget {
           SizedBox(
             height: MediaQuery.sizeOf(context).height / 20,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Button(
+                onTap: () {
+                  Navigator.pushNamed(context, "/signup");
+                },
                 text: "Sign Up",
                 iconData: Icons.account_circle_rounded,
               )
@@ -76,10 +82,11 @@ class Auth extends StatelessWidget {
           SizedBox(
             height: MediaQuery.sizeOf(context).height / 20,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Button(
+                onTap: () {},
                 text: "Enter as ghost",
                 iconData: Icons.account_circle_outlined,
               )

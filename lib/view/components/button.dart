@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button({super.key, required this.iconData, required this.text});
-  final IconData iconData;
+  const Button(
+      {super.key, this.iconData, required this.text, required this.onTap});
+  final IconData? iconData;
   final String text;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         width: 298,
         height: 68,

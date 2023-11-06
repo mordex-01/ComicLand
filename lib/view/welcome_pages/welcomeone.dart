@@ -1,3 +1,4 @@
+import 'package:comicland/view/welcome_pages/welcometwo.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeOne extends StatelessWidget {
@@ -67,7 +68,14 @@ class WelcomeOne extends StatelessWidget {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(100)),
                   child: RawMaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WelcomeTwo(),
+                          ),
+                          (route) => false);
+                    },
                     child: const Icon(
                       Icons.arrow_forward_ios_rounded,
                       color: Colors.white,
