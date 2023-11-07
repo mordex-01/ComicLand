@@ -86,7 +86,10 @@ class Auth extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Button(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, "/setindex", (route) => false);
+                },
                 text: "Enter as ghost",
                 iconData: Icons.account_circle_outlined,
               )
