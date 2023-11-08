@@ -59,7 +59,11 @@ class Signup extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Button(onTap: () {}, text: "Sign Up"),
+                Button(
+                  onTap: () {},
+                  text: "Sign Up",
+                  iconData: Icons.assignment_ind_outlined,
+                ),
               ],
             ),
             SizedBox(
@@ -72,7 +76,8 @@ class Signup extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    text: "   Back"),
+                    text: "   Back",
+                    iconData: Icons.arrow_back_ios_new),
               ],
             ),
           ],

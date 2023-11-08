@@ -12,29 +12,25 @@ class Button extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: 298,
+        width: 300,
         height: 68,
         decoration: BoxDecoration(
           color: const Color.fromRGBO(0, 0, 0, 1),
           borderRadius: BorderRadius.circular(25),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const SizedBox(
-              width: 40,
-            ),
             Icon(
               iconData,
               size: 35,
               color: Colors.white,
             ),
-            const SizedBox(
-              width: 40,
-            ),
             Text(
               text,
               style: const TextStyle(color: Colors.white, fontSize: 20),
-            )
+            ),
+            const SizedBox()
           ],
         ),
       ),

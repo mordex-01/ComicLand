@@ -1,7 +1,6 @@
 import 'package:comicland/view/Login_page/login.dart';
-import 'package:comicland/view/accountsettings_page/accountsettings.dart';
+import 'package:comicland/view/settings_page/settings.dart';
 import 'package:comicland/view/auth/auth.dart';
-import 'package:comicland/view/home_page/home.dart';
 import 'package:comicland/view/setindex_home/setindex.dart';
 import 'package:comicland/view/signup_page/signup.dart';
 import 'package:comicland/view/subscription_page/subscription.dart';
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         '/setindex': (context) => const Setindex(),
         '/auth': (context) => const Auth(),
         '/subscription': (context) => const Subscription(),
-        '/accountsettings': (context) => const Accountsettings(),
+        '/accountsettings': (context) => const Settings(),
       },
       debugShowCheckedModeBanner: false,
       home: const WelcomeOne(),

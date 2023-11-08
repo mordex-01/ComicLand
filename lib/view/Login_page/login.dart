@@ -73,7 +73,7 @@ class Login extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Button(onTap: () {}, text: "  Login"),
+                Button(onTap: () {}, text: "  Login", iconData: Icons.login),
               ],
             ),
             SizedBox(
@@ -83,10 +83,12 @@ class Login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Button(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    text: "  Back"),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  text: "  Back",
+                  iconData: Icons.arrow_back_ios_new,
+                ),
               ],
             ),
           ],

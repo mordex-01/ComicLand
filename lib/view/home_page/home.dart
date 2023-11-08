@@ -20,8 +20,8 @@ class _HomeState extends State<Home> {
               right: 30,
               top: MediaQuery.sizeOf(context).height / 3,
               child: Container(
-                width: 285,
-                height: 121,
+                width: 300,
+                height: 100,
                 decoration: const BoxDecoration(
                   color: Color.fromRGBO(80, 80, 80, 1),
                   borderRadius: BorderRadius.all(
@@ -157,28 +157,28 @@ class _HomeState extends State<Home> {
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: ListView(
-                      padding: EdgeInsetsDirectional.all(5),
+                      padding: const EdgeInsetsDirectional.all(5),
                       scrollDirection: Axis.horizontal,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(25),
                           child: Image.asset("assets/image1.jpg"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(25),
                           child: Image.asset("assets/image2.jpg"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(25),
                           child: Image.asset("assets/image3.jpg"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         ClipRRect(
@@ -208,21 +208,21 @@ class _HomeState extends State<Home> {
                       color: const Color.fromRGBO(80, 80, 80, 1),
                       borderRadius: BorderRadius.circular(25)),
                   child: ListView(
-                      padding: EdgeInsetsDirectional.all(8),
+                      padding: const EdgeInsetsDirectional.all(8),
                       scrollDirection: Axis.horizontal,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(25),
                           child: Image.asset("assets/image4.jpg"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(25),
                           child: Image.asset("assets/image6.jpg"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         ClipRRect(
